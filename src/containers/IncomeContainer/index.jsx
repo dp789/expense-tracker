@@ -10,7 +10,6 @@ import { useForm } from "react-hook-form";
 import { Button, Dialog, Stack, Typography, Box } from "@mui/material";
 
 import FormInput from "../../components/FormInput/index";
-import FormButton from "../../components/FormButton/index";
 
 import IncomeContainerSaga from "./saga";
 import { incomeContainerCreators } from "./reducer";
@@ -62,7 +61,6 @@ export function IncomeContainer({ dispatchAddIncome }) {
               type={"text"}
               control={control}
             />
-            <FormButton type="submit" text="Submit" control={control} />
           </Stack>
         </Box>
       </Dialog>
