@@ -14,3 +14,15 @@
  2. components used
  3. reducers , selectors , saga or utility functions
 ```
+
+### Teck Stack & Important libraries Used
+
+```
+ - Reactjs
+ - MaterialUI
+ - Redux
+ - Redux-saga
+ - Firebase
+ - immer
+ - react-hook-form
+```
