@@ -1,0 +1,13 @@
+{
+    "something_went_wrong": "Sorry. Something went wrong! Please try again in sometime.",
+    "app_heading":"Expense Tracker",
+    "side_bar_heading":"Expenses",
+    "expense_side_menu": "Add Expenses",
+    "transactions_side_menu":"Transaction",
+    "income_error":"Error occured while recording income",
+    "expenses_error":"Error occured while recording expenses",
+    "transaction_error": "Error while fetchng transaction",
+    "transactions_page_heading":"Transactions",
+    "edit_transactions_heading":"Edit Transaction"
+}
+  
