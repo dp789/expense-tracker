@@ -13,7 +13,6 @@ export const editIncomeApi = async (newIncome) => {
   const docSnap = await getDoc(expensesDoc);
   if (docSnap.exists()) {
     const data = docSnap.data();
-    console.log({ data });
     const updatedDoc = {
       ...data,
       income: newIncome,

@@ -11,7 +11,6 @@ const { successAddedIncome } = homeContainerCreators;
 
 export function* requestAddIncome(action) {
   const { income } = action.payload;
-  console.log({ action });
   try {
     yield call(editIncomeApi, income);
     yield put(successAddedIncome(income));
