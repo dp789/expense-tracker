@@ -4,10 +4,9 @@
  *
  */
 
-import React from "react";
 import PropTypes from "prop-types";
 import styled from "@emotion/styled";
-import T from "../T";
+import T from "../T/index";
 
 const StyledClickable = styled.div`
   color: #1890ff;

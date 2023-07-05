@@ -9,7 +9,7 @@ import { AppBar, Toolbar, IconButton, Box } from "@mui/material";
 import { Menu as MenuIcon, ArrowBack } from "@mui/icons-material";
 
 // import { LogoutMenu } from "@/features/LogoutMenu/components";
-import SideBar from "../SiderBar";
+import SideBar from "../SiderBar/index";
 import logo from "../../assets/logo.png";
 
 const NavHeading = styled(Toolbar)`

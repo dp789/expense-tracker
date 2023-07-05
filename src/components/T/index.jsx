@@ -8,7 +8,7 @@ import { memo } from "react";
 import styled from "@emotion/styled";
 import { FormattedMessage } from "react-intl";
 import { PropTypes } from "prop-types";
-import If from "../If";
+import If from "../If/index";
 import { fonts } from "../../themes/index";
 
 const StyledText = styled.p`

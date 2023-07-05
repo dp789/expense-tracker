@@ -8,7 +8,7 @@ import { AppBar } from "@mui/material";
 import styled from "@emotion/styled";
 import { injectIntl } from "react-intl";
 import { fonts, colors } from "../../themes/index";
-import T from "../T";
+import T from "../T/index";
 import logo from "../../assets/react.svg";
 
 const StyledHeader = styled(AppBar)`

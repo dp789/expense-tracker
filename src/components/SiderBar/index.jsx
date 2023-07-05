@@ -18,7 +18,7 @@ import { HowToReg, PersonAddAlt1 } from "@mui/icons-material";
 import styled from "@emotion/styled";
 import routeConstants from "../../utils/routeConstants";
 import { useHistory } from "react-router-dom";
-import { translate } from "../IntlGlobalProvider";
+import { translate } from "../IntlGlobalProvider/index";
 import { colors } from "../../themes/index";
 
 const Heading = styled(Typography)(

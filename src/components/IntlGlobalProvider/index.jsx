@@ -1,6 +1,5 @@
-// eslint-disable-next-line
-import React from 'react';
-import { useIntl } from 'react-intl';
+/* eslint-disable react-refresh/only-export-components */
+import { useIntl } from "react-intl";
 
 // 'intl' service singleton reference
 let intl;
@@ -15,4 +14,5 @@ export const setIntl = (intlValue) => {
   intl = intlValue;
 };
 
-export const translate = (id, values = {}) => intl.formatMessage({ id }, values);
+export const translate = (id, values = {}) =>
+  intl.formatMessage({ id }, values);

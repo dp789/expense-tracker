@@ -8,7 +8,7 @@ import { useState } from "react";
 import { Box } from "@mui/material";
 import styled from "@emotion/styled";
 
-import NavBar from "../NavBar";
+import NavBar from "../NavBar/index";
 import { colors } from "../../themes/index";
 
 const ChildrenWrapper = styled("main", {

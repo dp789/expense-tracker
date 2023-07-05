@@ -2,9 +2,9 @@
 import { Box } from "@mui/material";
 import { useForm } from "react-hook-form";
 
-import FormInput from "../FormInput";
-import CategoryComponent from "../CategoryComponent";
-import FormButton from "../FormButton/Index";
+import FormInput from "../FormInput/index";
+import CategoryComponent from "../CategoryComponent/index";
+import FormButton from "../FormButton/index";
 import { categories } from "./categoryItem";
 
 const FormComponents = ({ onSubmit }) => {
