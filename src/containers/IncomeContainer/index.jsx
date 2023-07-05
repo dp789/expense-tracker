@@ -10,7 +10,7 @@ import { useForm } from "react-hook-form";
 import { Button, Dialog, Stack, Typography, Box } from "@mui/material";
 
 import FormInput from "../../components/FormInput/index";
-import FormButton from "@components/FormButton";
+import FormButton from "@components/FormButton/index";
 
 import IncomeContainerSaga from "./saga";
 import { incomeContainerCreators } from "./reducer";
