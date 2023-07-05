@@ -13,6 +13,7 @@ export const initialState = {
     expenses: 0,
     categories: [],
   },
+  expenses: 0,
   transactionList: [],
   data: null,
   error: null,
@@ -25,6 +26,7 @@ export const { Types: homeContainerTypes, Creators: homeContainerCreators } =
     successAddedIncome: ["income"],
     successAddedExpenses: ["expenses"],
     successTransaction: ["data"],
+    successGetExpenses: ["data"],
   });
 
 /* eslint-disable default-case, no-param-reassign */
@@ -42,6 +44,9 @@ export const homeContainerReducer = (state = initialState, action) =>
         break;
       case homeContainerTypes.REQUEST_GET_TRANSACTIONS:
         draft.success = true;
+        break;
+      case homeContainerTypes.SUCCESS_GET_EXPENSES:
+        draft.expenses = action.data;
         break;
       case homeContainerTypes.SUCCESS_TRANSACTION:
         draft.transactionList = action.data;

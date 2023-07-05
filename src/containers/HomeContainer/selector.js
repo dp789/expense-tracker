@@ -9,3 +9,6 @@ export const selectTransactionsList = () =>
   createSelector(homeContainerDomain, (substate) =>
     get(substate, "transactionList")
   );
+
+export const selectIncome = () =>
+  createSelector(homeContainerDomain, (substate) => get(substate, "expenses"));

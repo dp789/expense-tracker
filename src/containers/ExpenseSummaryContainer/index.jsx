@@ -10,8 +10,9 @@ import { Stack } from "@mui/material";
 
 import CardComponent from "../../components/CardComponent/index";
 import { selectExpenseSummary } from "../IncomeContainer/selector";
+import { selectIncome } from "../HomeContainer/selector";
 
-export function ExpenseSummaryContainer({ data, transactionsData }) {
+export function ExpenseSummaryContainer({ transactionsData, income }) {
   const [totalExpense, setTotalExpense] = useState(0);
   useEffect(() => {
     let totalAmount = 0;
@@ -26,7 +27,6 @@ export function ExpenseSummaryContainer({ data, transactionsData }) {
     setTotalExpense(totalAmount);
   }, [transactionsData]);
 
-  const { income } = data;
   const totalSavings = income - totalExpense;
   return (
     <>
@@ -40,13 +40,14 @@ export function ExpenseSummaryContainer({ data, transactionsData }) {
 }
 
 ExpenseSummaryContainer.propTypes = {
-  dispatchAddIncome: PropTypes.func,
   data: PropTypes.object,
   transactionsData: PropTypes.array,
+  income: PropTypes.string,
 };
 
 const mapStateToProps = createStructuredSelector({
   data: selectExpenseSummary(),
+  income: selectIncome(),
 });
 
 export function mapDispatchToProps() {}
