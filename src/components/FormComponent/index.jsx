@@ -4,7 +4,7 @@ import { useForm } from "react-hook-form";
 
 import FormInput from "../FormInput/index";
 import CategoryComponent from "../CategoryComponent/index";
-import FormButton from "@components/FormButton/index";
+import FormButton from "@components/FormButton/index.jsx";
 import { categories } from "./categoryItem";
 
 const FormComponents = ({ onSubmit }) => {
