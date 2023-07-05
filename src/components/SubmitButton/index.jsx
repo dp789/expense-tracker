@@ -18,7 +18,7 @@ const StyledButton = styled(Button)(() => ({
   },
 }));
 
-const FormButton = ({ text, size, ...props }) => {
+export default function SubmitButton({ text, size, ...props }) {
   return (
     <StyledButton
       sx={{ mb: "1rem" }}
@@ -29,11 +29,9 @@ const FormButton = ({ text, size, ...props }) => {
       {text}
     </StyledButton>
   );
-};
+}
 
-FormButton.defaultProps = {
+SubmitButton.defaultProps = {
   loading: false,
   size: "large",
 };
-
-export default FormButton;

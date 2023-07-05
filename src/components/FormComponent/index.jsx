@@ -4,7 +4,7 @@ import { useForm } from "react-hook-form";
 
 import FormInput from "../FormInput/index";
 import CategoryComponent from "../CategoryComponent/index";
-// import FormButton from "../FormButton/index";
+import SubmitButton from "../SubmitButton/index";
 import { categories } from "./categoryItem";
 
 const FormComponents = ({ onSubmit }) => {
@@ -38,8 +38,8 @@ const FormComponents = ({ onSubmit }) => {
         label="Categories"
         control={control}
       />
+      <SubmitButton type="submit" text="Create Expense" control={control} />
     </Box>
   );
 };
 export default FormComponents;
-//  <FormButton type="submit" text="Create Expense" control={control} />
