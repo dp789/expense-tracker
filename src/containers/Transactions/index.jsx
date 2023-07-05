@@ -12,11 +12,11 @@ import { injectIntl } from "react-intl";
 import { createStructuredSelector } from "reselect";
 import { connect } from "react-redux";
 
-import FormComponents from "../../components/FormComponent";
-import Layout from "../../components/Layout";
-import { selectTransactionsList } from "../HomeContainer/selector";
-import { translate } from "../../components/IntlGlobalProvider";
+import FormComponents from "../../components/FormComponent/index";
+import Layout from "../../components/Layout/index";
+import { translate } from "../../components/IntlGlobalProvider/index";
 
+import { selectTransactionsList } from "../HomeContainer/selector";
 import transactionSaga from "./saga";
 import { TransactionsCreators } from "./recducer";
 import { generateUuid } from "../../utils/index";

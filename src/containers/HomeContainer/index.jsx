@@ -8,12 +8,12 @@ import { createStructuredSelector } from "reselect";
 import { connect } from "react-redux";
 import { Dialog, Stack, Typography } from "@mui/material";
 
-import Layout from "../../components/Layout";
-import ButtonComponent from "../../components/ButtonComponent";
+import Layout from "../../components/Layout/index";
+import ButtonComponent from "../../components/ButtonComponent/index";
 import IncomeContainer from "../IncomeContainer/index";
 import ExpenseSummaryContainer from "../ExpenseSummaryContainer/index";
-import TableComponent from "../../components/TableComponent";
-import FormComponents from "../../components/FormComponent";
+import TableComponent from "../../components/TableComponent/index";
+import FormComponents from "../../components/FormComponent/index";
 
 import { generateUuid } from "../../utils/index";
 import HomeContainerSaga from "./saga";

@@ -6,9 +6,9 @@ import { injectIntl } from "react-intl";
 import { createStructuredSelector } from "reselect";
 import { connect } from "react-redux";
 import { isThisMonth } from "date-fns";
-
-import CardComponent from "../../components/CardComponent";
 import { Stack } from "@mui/material";
+
+import CardComponent from "../../components/CardComponent/index";
 import { selectExpenseSummary } from "../IncomeContainer/selector";
 
 export function ExpenseSummaryContainer({ data, transactionsData }) {

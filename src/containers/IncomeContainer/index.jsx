@@ -7,9 +7,10 @@ import { injectIntl } from "react-intl";
 import { createStructuredSelector } from "reselect";
 import { connect } from "react-redux";
 import { useForm } from "react-hook-form";
-import FormInput from "../../components/FormInput";
-import FormButton from "../../components/FormButton";
 import { Button, Dialog, Stack, Typography, Box } from "@mui/material";
+
+import FormInput from "../../components/FormInput/index";
+import FormButton from "../../components/FormButton/index";
 
 import IncomeContainerSaga from "./saga";
 import { incomeContainerCreators } from "./reducer";

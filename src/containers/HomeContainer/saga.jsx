@@ -3,7 +3,7 @@ import { takeLatest, call, put } from "redux-saga/effects";
 import { Alert } from "@mui/material";
 import { homeContainerTypes, homeContainerCreators } from "./reducer";
 import { addTransactionApi, getTransactionsApi } from "../../services/coreApis";
-import { translate } from "../../components/IntlGlobalProvider";
+import { translate } from "../../components/IntlGlobalProvider/index";
 
 const { REQUEST_ADD_EXPENSES, REQUEST_GET_TRANSACTIONS } = homeContainerTypes;
 const { successAddedExpenses, successTransaction } = homeContainerCreators;

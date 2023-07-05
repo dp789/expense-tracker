@@ -4,7 +4,7 @@ import { Alert } from "@mui/material";
 import { incomeContainerTypes } from "./reducer";
 import { homeContainerCreators } from "../HomeContainer/reducer";
 import { editIncomeApi } from "../../services/coreApis";
-import { translate } from "../../components/IntlGlobalProvider";
+import { translate } from "../../components/IntlGlobalProvider/index";
 
 const { REQUEST_ADD_INCOME } = incomeContainerTypes;
 const { successAddedIncome } = homeContainerCreators;
